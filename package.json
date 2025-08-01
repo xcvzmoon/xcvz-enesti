@@ -12,8 +12,16 @@
     "lint": "oxlint . --fix -D correctness --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@types/pg": "^8.15.5",
+    "drizzle-kit": "^0.31.4",
     "nitropack": "latest",
     "oxlint": "^1.9.0",
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.4",
+    "drizzle-zod": "^0.8.2",
+    "pg": "^8.16.3",
+    "zod": "^4.0.14"
   }
 }
