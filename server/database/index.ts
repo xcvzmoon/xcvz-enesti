@@ -1,8 +1,8 @@
-import { poolConfigSchema } from '~/types/pool-config';
+import { poolConfigSchema } from '../types/pool-config';
 import { Pool } from 'pg';
 import { drizzle } from 'drizzle-orm/node-postgres';
 
-const poolConfig = poolConfigSchema.parse({
+export const poolConfig = poolConfigSchema.parse({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
   database: process.env.DB_DATABASE,
