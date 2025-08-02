@@ -9,7 +9,12 @@
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
     "format": "prettier --write server/",
-    "lint": "oxlint . --fix -D correctness --ignore-path .gitignore"
+    "lint": "oxlint . --fix -D correctness --ignore-path .gitignore",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:push": "drizzle-kit push",
+    "drizzle:pull": "drizzle-kit pull",
+    "drizzle:studio": "drizzle-kit studio",
+    "drizzle:check": "drizzle-kit check"
   },
   "devDependencies": {
     "@types/pg": "^8.15.5",
